@@ -1,0 +1,15 @@
+.ba-rooms{
+	background-size: cover;
+	background: #fff no-repeat 50%;
+	&__title{
+	font-family: $header-font-family;
+	color:  #ffffff;
+	font-size: 70px;
+	font-weight: 400;
+	text-align: center;
+	}
+}
+.ba-cover-too{
+	background-color:  rgba(0, 0, 0, 0.8);
+	min-height: 411px;
+}

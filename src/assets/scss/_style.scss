@@ -1,0 +1,119 @@
+.button{
+	font-family: $header-font-family;
+	background-color:  #5a477d;
+	width: 257px;
+	height: 69px;
+	text-align: left;
+	line-height: 30px;
+	color:  #ffffff;
+	font-size: 25px;
+	font-weight: 400;
+	margin: 0 auto;
+}
+
+.ba-intro{
+	.row.column{
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+.ba-cover{
+	background-color:  rgba(0, 0, 0, 0.8);
+}
+
+.ba-slider__slide{
+		min-height: 100vh;
+		display: flex;
+		text-align: center;
+		color: #fff;
+		background: 50%;
+		background-size: cover;
+	}
+.ba-title{
+	font-family: $header-font-family;
+	color:  #000000;
+	font-weight: 400;
+	line-height: 88px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+// ba-book-now
+.ba-book-now{
+	padding: 50px 33px 55px;
+	text-align: center;
+	background-color:  #ffffff;
+	max-width: 1068px;
+	height: 339px;
+	position: relative;
+	bottom: 100px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	margin-left: auto;
+	margin-right: auto;
+}
+.ba-book{
+	input{
+		border: 2px solid #5a477d;
+		box-sizing: border-box;
+		background-color:  rgba(214, 214, 214, 0);
+		width: 200px;
+		height: 65px;
+
+	}
+	&__button{
+		width: 250px;
+		height: 65px;
+	}
+	&__icons{
+		position: relative;
+	}
+}
+.ba-fa{
+	position: absolute;
+	top: 30%;
+    right: 20%;
+}
+// section
+.ba-section{
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.ba-description{
+	p{
+	color:  #808080;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 24px;
+		&:first-letter {
+		font-family: $header-font-family;
+	    color:  #5a477d;
+		font-size: 47px;
+		font-weight: 400;
+	    }
+	}
+}
+
+.ba-activities{
+	&__img{
+	color:  #fefefe;
+	position: relative;
+    text-align: left;
+    display: block;
+
+    }
+	&__text {
+	position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1;
+    background: -webkit-linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+background: -moz-linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+background: -o-linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+background: -ms-linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+	}
+}
+

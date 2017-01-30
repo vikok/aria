@@ -1,0 +1,16 @@
+.ba-main-menu{
+	li{
+		padding-left: 20px;
+		a{
+			color:  #000000;
+			font-weight: 700;
+			text-transform: uppercase;
+			&:hover, &:focus{
+				color: $primary-color;
+			}
+			@include breakpoint(medium down) {
+				text-align: right;
+			}
+		}
+	}
+}
