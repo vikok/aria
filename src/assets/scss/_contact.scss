@@ -1,0 +1,66 @@
+.ba-contact{
+	padding: 92px;
+}
+.ba-form{
+	input{
+		background-color:  #f9f9f9;
+		max-width: 335px;
+		height: 42px;
+		border: none;
+		outline: none;
+		color:  #666666;
+		font-size: 18px;
+		font-weight: 300;
+	}
+	textarea{
+		background-color:  #f9f9f9;
+		max-width: 733px;
+		height: 133px;
+		border: none;
+		color:  #666666;
+		font-size: 18px;
+		font-weight: 300;
+		margin-left: 14px;
+	}
+	&__button{
+		width: 233px;
+		height: 42px;
+		line-height: 2px;
+		font-size: 16px;
+		font-weight: 700;
+	}
+}
+.ba-form-icon{
+	position: relative;
+}
+.ba-form-fa{
+	position: absolute;
+	right: 73%;
+    color: #fff;
+    bottom: 40%;
+}
+
+.ba-contact-info{
+	margin-top: 80px;
+}
+.ba-adress{
+	border-left: 1px solid #7f7297;
+	padding-left: 15px;
+	margin-bottom: 50px;
+	color:  #cbcbcb;
+	font-size: 20px;
+	font-weight: 300;
+	a{
+		color:  #cbcbcb;
+	}
+}
+
+
+
+
+
+
+
+.map{
+	height: 590px;
+}

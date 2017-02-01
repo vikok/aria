@@ -6,7 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aria Hotel &amp; Resort Free Theme</title>
+    <link rel="icon" href="favicon.png"/>
     <link rel="stylesheet" href="assets/css/app.css">
+
   </head>
   <body>
 
@@ -45,54 +47,101 @@
     </div>
     <!-- END ba-rooms -->
     
-    <section class></section>
-    <!-- BEGIN row column  -->
-    <div class="row column">
-      <!-- BEGIN row  -->
-      <div class="row">
-              <form action="#" method="post" class="ba-form">
-                <h2>GET IN TOUCH</h2>
-                <div class="row">
-                  <div class="medium-6 columns">
-                    <label>
-                      <input type="text" placeholder="Your Name">
-                    </label>
+    <!-- BEGIN ba-contact  -->
+    <div class="ba-contact">
+      <!-- BEGIN row column  -->
+      <div class="row column">
+        <!-- BEGIN row  -->
+        <div class="row">
+        <!-- BEGIN column medium-6  -->
+        <div class="column medium-9">
+              <h2>GET IN TOUCH</h2>
+                <form action="#" method="post" class="ba-form">
+                  <div class="row">
+                    <div class="medium-6 columns">
+                      <label>
+                        <input type="text" placeholder="Your Name">
+                      </label>
+                    </div>
+                    <div class="medium-6 columns">
+                      <label>
+                        <input type="text" placeholder="Email">
+                      </label>
+                    </div>
                   </div>
-                  <div class="medium-6 columns">
-                    <label>
-                      <input type="text" placeholder="Email">
-                    </label>
+                  <div class="row">
+                    <div class="medium-6 columns">
+                      <label>
+                        <input type="text" placeholder="Phone Number">
+                      </label>
+                    </div>
+                    <div class="medium-6 columns">
+                      <label>
+                        <input type="text" placeholder="Website">
+                      </label>
+                    </div>
                   </div>
+                  <label>
+                    <textarea placeholder="Message"></textarea>
+                  </label>
+                  <!-- BEGIN ba-form-icon  -->
+                  <div class="ba-form-icon">
+                    <button class="button ba-form__button" type="submit">Send</button>
+                    <i class="fa fa-paper-plane-o ba-form-fa" aria-hidden="true"></i>
+                  </div>
+                  <!-- END ba-form-icon -->
+                </form>
+        </div>
+        <!-- END column medium-6 -->
+        <!-- BEGIN column medium-6  -->
+        <div class="column medium-3">
+                <!-- BEGIN ba-contact-info  -->
+                <div class="ba-contact-info">
+                    <!-- BEGIN ba-adress  -->
+                    <div class="ba-adress">
+                      <p>Example Location 150</p>
+                    </div>
+                    <!-- END ba-adress -->
+                    <!-- BEGIN ba-adress  -->
+                    <div class="ba-adress">
+                      <p><a href="tel:+123456789">+123456789</a></p>
+                    </div>
+                    <!-- END ba-adress -->
+                    <!-- BEGIN ba-adress  -->
+                    <div class="ba-adress">
+                      <p><a href="mailto:example@example.com">example@example.com</a></p>
+                    </div>
+                    <!-- END ba-adress -->
                 </div>
-                <div class="row">
-                  <div class="medium-6 columns">
-                    <label>
-                      <input type="text" placeholder="Phone Number">
-                    </label>
-                  </div>
-                  <div class="medium-6 columns">
-                    <label>
-                      <input type="text" placeholder="Website">
-                    </label>
-                  </div>
-                </div>
-                <label>
-                  <textarea placeholder="Message"></textarea>
-                </label>
-                <button class="button" type="submit">Send</button>
-              </form>
+                <!-- END ba-contact-info -->
+        </div>
+        <!-- END column medium-6 -->
+        </div>
+        <!-- END row -->
       </div>
-      <!-- END row -->
+      <!-- END row column -->
     </div>
-    <!-- END row column -->
+    <!-- END ba-contact -->
+    
+    
+    
+    
+    
+    <!-- BEGIN ba-map  -->
+    <div class="map" id="map">
+    </div>
+    <!-- END ba-map -->
+    
     <!-- BEGIN ba-footer  -->
     <div class="ba-footer">
         <!-- BEGIN row column  -->
         <div class="row column">
+        <!-- BEGIN row  -->
+        <div class="row">
             <!-- BEGIN column medium-3  -->
             <div class="column medium-3 ba-footer__info">
-                <h5>Connect with us</h5>
-                <p>Social media channels</p>
+                <h5 class="ba-add">Connect with us</h5>
+                <p class="ba-descr">Social media channels</p>
                 <ul class="ba-socials menu simple">
                   <li><a href="#"><i class="fa fa-facebook ba-socials" aria-hidden="true"></i></a></li>
                   <li><a href="#"><i class="fa fa-twitter ba-socials" aria-hidden="true"></i></a></li>
@@ -102,9 +151,14 @@
             <!-- END column medium-3 -->
             <!-- BEGIN column medium-3  -->
             <div class="column medium-3 ba-footer__info">
-                <h5>Newsletter sign up</h5>
-                <p>Sign up for a special offers</p>
-                <div><img src="assets/img/home/footer_right.jpg" alt=""></div>
+                <h5 class="ba-add">Newsletter sign up</h5>
+                <p class="ba-descr">Sign up for a special offers</p>
+                <div class="input-group">
+                    <input type="email" name="" class="input-group-field">
+                    <a href="#" class="ba-button input-group-button">
+                        <i class="ion-arrow-right-c"></i>
+                    </a>
+                </div>
             </div>
             <!-- END column medium-3 -->
             <!-- BEGIN column medium-3  -->
@@ -125,12 +179,36 @@
             </div>
             <!-- END column medium-3 -->
         </div>
+        <!-- END row -->
+    
+        <!-- BEGIN row  -->
+        <div class="row ba-footer-down text-center">
+            <!-- BEGIN column medium-4  -->
+            <div class="column medium-4">
+                <a href="#"><p>Aria Hotel &amp; Resort 2017</p></a>
+            </div>
+            <!-- END column medium-4 -->
+            <!-- BEGIN column medium-4  -->
+            <div class="column medium-4">
+               <p><a href="tel:+123456789">+123456789</a></p>
+            </div>
+            <!-- END column medium-4 -->
+            <!-- BEGIN column medium-4  -->
+            <div class="column medium-4">
+                <p><a href="mailto:example@example.com">example@example.com</a></p>
+            </div>
+            <!-- END column medium-4 -->
+        </div>
+        <!-- END row -->
+        </div>
         <!-- END row column -->
     </div>
     <!-- END ba-footer -->
     
     
 
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC0jnIDPLiN1GAoApbxIflOaSynYvKoxw"></script>
     <script src="assets/js/app.js"></script>
     <script src="https://use.fontawesome.com/cdae8fbe94.js"></script>
   </body>

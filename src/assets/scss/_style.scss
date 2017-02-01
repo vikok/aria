@@ -1,3 +1,4 @@
+
 .button{
 	font-family: $header-font-family;
 	background-color:  #5a477d;
@@ -18,6 +19,13 @@
 		flex-direction: column;
 		justify-content: center;
 	}
+}
+.ba-live{
+	font-family: $header-font-family;
+	color:  #fefefe;
+	font-size: 50px;
+	font-weight: italic;
+	text-transform: uppercase;
 }
 .ba-cover{
 	background-color:  rgba(0, 0, 0, 0.8);
@@ -95,25 +103,49 @@
 	    }
 	}
 }
-
-.ba-activities{
-	&__img{
-	color:  #fefefe;
+.ba-bedroom__content{
+	text-align: left;
+}
+.ba-activity{
 	position: relative;
-    text-align: left;
-    display: block;
-
-    }
-	&__text {
-	position: absolute;
-    left: 20px;
-    bottom: 20px;
-    z-index: 1;
-    background: -webkit-linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-background: -moz-linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-background: -o-linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-background: -ms-linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
-background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+	&__text{
+	text-transform: uppercase;
+    font-size: 35px;
+    color: #fefefe;
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
 	}
 }
+.ba-activities{
+	position: relative;
+	&__img{
+		color:  #fefefe;
+		position: relative;
+	    text-align: left;
+	    display: block;
+    @include breakpoint(medium down) {
+		margin-bottom: 20px;
+	}
+    }
+	&__overlay {
+		position: absolute;
+		bottom: 3%;
+		left: 7%;
+		z-index: 1;
+		color: #FFF;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity .2s, visibility .1s;
+    }
+}
+.ba-activities__img:hover .ba-activities__overlay{
+	visibility: visible;
+	opacity: 1;
+}
 
+.ba-activity:hover .ba-activity__text{
+	position: absolute;
+	bottom: 30%;
+	left: 8%;
+}

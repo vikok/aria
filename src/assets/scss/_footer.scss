@@ -1,14 +1,40 @@
 .ba-footer{
 	background-color:  #212121;
 	min-height: 244px;
-	padding-top: 46px;
+	padding-top: 36px;
+	@include breakpoint(medium down){
+		text-align: center;
+		padding-bottom: 20px;
+	}
 	&__info{
 		color: #fff;
 	}
 	&__advisor{
 		text-align: center;
 		color: #fff;
+		font-size: 14px;
+		font-weight: 700;
+		h5{
+			margin-bottom: 0;
+			font-size: 14px;
+		}
+		time{
+			font-size: 12px;
+		}
 	}
+}
+.ba-add{
+	font-family: $header-font-family;
+	color:  #ffffff;
+	font-size: 23px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.ba-descr{
+	color:  #646464;
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 15px;
 }
 .ba-socials{
 	color: #fff;
@@ -16,7 +42,6 @@
 	&:hover{
 		color:  #5a477d;
 	}
-
 }
 .ba-links{
 	list-style: none;
@@ -29,6 +54,27 @@
 			color:  #5a477d;
 			font-size: 18px;
 			font-weight: 400;
+			margin-right: 5px;
+		}
+		&:hover{
+		color:  #5a477d;
 		}
 	}
+}
+.ba-footer-down{
+	margin-top: 30px;
+	border-top:  2px solid #5a477d;
+	padding-top: 18px;
+	font-size: 12px;
+	font-weight: 700;
+}
+.input-group-field{
+	background-color: #646464;
+	border: none;
+}
+.ba-button{
+    width: 55px;
+    text-align: center;
+    background-color: #5a477d;
+    color: #FFF;
 }

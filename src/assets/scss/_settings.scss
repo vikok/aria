@@ -63,7 +63,7 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: "Lato", 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Lato', Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -104,7 +104,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: "PlayfairDisplay", 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$header-font-family: 'PlayfairDisplay', Arial, sans-serif;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -410,8 +410,8 @@ $mediaobject-image-width-stacked: 100%;
 // --------
 
 $menu-margin: 20px;
-$menu-margin-nested: 1rem;
-$menu-item-padding: 0.7rem 2rem;
+$menu-margin-nested: 5px;
+$menu-item-padding: 18px;
 $menu-item-color-active: #5a477d;
 $menu-item-background-active: transparent;
 $menu-icon-spacing: 0.25rem;
@@ -462,20 +462,20 @@ $orbit-control-zindex: 10;
 // 26. Pagination
 // --------------
 
-$pagination-font-size: rem-calc(14);
+$pagination-font-size: 20px;
 $pagination-margin-bottom: $global-margin;
 $pagination-item-color: $black;
 $pagination-item-padding: rem-calc(3 10);
-$pagination-item-spacing: rem-calc(1);
+$pagination-item-spacing: 20px;
 $pagination-radius: $global-radius;
-$pagination-item-background-hover: $light-gray;
+$pagination-item-background-hover: transparent;
 $pagination-item-background-current: $primary-color;
 $pagination-item-color-current: $white;
 $pagination-item-color-disabled: $medium-gray;
 $pagination-ellipsis-color: $black;
 $pagination-mobile-items: false;
 $pagination-mobile-current-item: false;
-$pagination-arrows: true;
+$pagination-arrows: false;
 
 // 27. Progress Bar
 // ----------------
