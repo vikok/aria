@@ -1,4 +1,3 @@
-
 ;(function() {
   $(document).foundation();
   $('.ba-slider').slick({
@@ -8,18 +7,23 @@
   	dots: true,
   	variableWidth: false
   });
-function initMap() {
+
+  function initMap() {
+  var uluru = {lat: 39.889965, lng: 18.110712};
   var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 39.889965, lng: 18.110712},
-    scrollwheel: false,
-    zoom: 14
-  });
+      zoom: 16,
+      center: uluru
+   });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+          icon: 'assets/img/contact/marker.png'
+        });
 }
   initMap();
-  var torreMarker = new google.maps.Marker({
-      position: map,
-      map: map,
-      title: "Torre",
-      icon: 'assets/img/contact/marker.png'
-      });
+  $( function() {
+    $( ".datepicker" ).datepicker();
+  } );
+
+
 })();

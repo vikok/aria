@@ -2,7 +2,7 @@
 	padding: 92px;
 }
 .ba-form{
-	input{
+	&__input{
 		background-color:  #f9f9f9;
 		max-width: 335px;
 		height: 42px;
@@ -14,13 +14,12 @@
 	}
 	textarea{
 		background-color:  #f9f9f9;
-		max-width: 733px;
+		max-width: 748px;
 		height: 133px;
 		border: none;
 		color:  #666666;
 		font-size: 18px;
 		font-weight: 300;
-		margin-left: 14px;
 	}
 	&__button{
 		width: 233px;

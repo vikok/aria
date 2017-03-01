@@ -14,6 +14,8 @@
 
     
     <header class="ba-header">
+      <!-- BEGIN row column  -->
+      <div class="row column">
         <div class="top-bar">
           <div class="top-bar-title">
             <a href="index.html" class="ba-logo">
@@ -21,20 +23,22 @@
             </a>
           </div>
             <span class="float-right" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-              <button class="menu-icon dark" type="button" data-toggle></button>
+              <button class="menu-icon gray" type="button" data-toggle></button>
             </span>
           <div id="responsive-menu">
             <div class="top-bar-right">
               <ul class="ba-main-menu menu vertical medium-horizontal">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="rooms.html">ROOMS &amp; SUITES</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="develop.html">ABOUT</a></li>
+                <li><a href="develop.html">EVENTS</a></li>
                 <li><a href="contact.html">CONTACT US</a></li>
               </ul>
             </div>
           </div>
         </div>
+      </div>
+      <!-- END row column -->
     </header>
     
     <!-- BEGIN ba-intro  -->
@@ -91,38 +95,30 @@
     </div>
     <!-- END ba-intro -->
     
-    <!-- BEGIN ba-book-now -->
-    <div class="ba-book-now">
        <!--  BEGIN row column -->
         <div class="row column">
-            <h2>Book Now</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet posuere mauris. Aenean a lorem porttitor lectus tristique viverra sed at urna.</p>
-            <form action="#" method="post" class="ba-book">
-              <!-- BEGIN row -->
-              <div class="row">
-                  <div class="column medium-3 ba-book__icons">
-                    <input type="text" name="Guests" placeholder="Guests">
-                    <i class="fa fa-user-o ba-fa" aria-hidden="true"></i>
-                  </div>
-                  <div class="column medium-3 ba-book__icons">
-                    <input type="date" name="From" placeholder="From">
-                    <i class="fa fa-calendar ba-fa" aria-hidden="true"></i>
-                  </div>
-                  <div class="column medium-3 ba-book__icons">
-                    <input type="date" name="To" placeholder="To">
-                    <i class="fa fa-calendar ba-fa" aria-hidden="true"></i>
-                  </div>
-                  <div class="column medium-3">
-                  <a class="button ba-book__button" href="#">Check Availability</a>
-                  </div>
-              </div>
-              <!-- END row -->
-            </form>
+          <div class="ba-book-now text-center">
+                        <h2>Book Now</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet posuere mauris. Aenean a lorem porttitor lectus tristique viverra sed at urna.
+                        </p>
+                        <form action="#" method="post" class="ba-form cf">
+                            <div class="row ba-book-now__row">
+                                <div class="column medium-4">
+                                    <input type="text" name="number" placeholder="Guests" required>
+                                </div>
+                                <div class="column medium-4">
+                                    <input type="text" name="date" class="datepicker" placeholder="From" required>
+                                </div>
+                                <div class="column medium-4">
+                                    <input class="datepicker" type="text" name="date" name="date" placeholder="To" required>
+                                </div>
+                            </div>
+                            <button class="button button-primary" type="submit">Check Availability</button>
+                        </form>
+                    </div>
         </div>
         <!-- END row column -->
-    </div>
-    <!-- END ba-book-now
-     -->
+    
     <section class="ba-section">
       <!-- BEGIN row column  -->
       <div class="row column">
@@ -267,41 +263,60 @@
         <!-- BEGIN row  -->
         <div class="row">
           <!-- BEGIN column medium-4  -->
-          <div class="column medium-4 ba-activity">
-              <a href="#" class="ba-activities__img">
+          <div class="column medium-4">
+            <!-- BEGIN ba-activity__img  -->
+            <div class="ba-activity__img">
                 <img src="assets/img/home/tours.jpg" alt="">
-                      <h4 class="ba-activity__text">TOURS</h4>
-                    <div class="ba-activities__overlay">
-                      <p>Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit. Aliquam sit amet posuere<br/> mauris. Aenean a lorem porttitor</p>
-                      <i class="ion-arrow-right-c"></i>
-                    </div>
-                </a>
-              </div>
-              <!-- END column medium-4 -->
-              <!-- BEGIN column medium-4  -->
-          <div class="column medium-4 ba-activity">
-              <a href="#" class="ba-activities__img">
+                <div class="ba-activity__overlay"></div>
+                  <div class="ba-activity__text">
+                      <h3>TOURS</h3>
+                        <div class="ba-activity__about">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet posuere mauris. Aenean a lorem porttitor
+                          </p>
+                       <a href="#"><i class="ion-arrow-right-c"></i></a>
+                       </div>
+                </div>
+            </div>
+            <!-- END ba-activity__img -->
+          </div>
+          <!-- END column medium-4 -->
+          <!-- BEGIN column medium-4  -->
+          <div class="column medium-4">
+            <!-- BEGIN ba-activity__img  -->
+            <div class="ba-activity__img">
                 <img src="assets/img/home/library.jpg" alt="">
-                      <h4 class="ba-activity__text">LIBRARY</h4>
-                      <div class="ba-activities__overlay">
-                      <p>Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit. Aliquam sit amet posuere<br/> mauris. Aenean a lorem porttitor</p>
-                      <i class="ion-arrow-right-c"></i>
-                    </div>
-                </a>
-              </div>
-              <!-- END column medium-4 -->
-              <!-- BEGIN column medium-4  -->
-          <div class="column medium-4 ba-activity">
-              <a href="#" class="ba-activities__img">
-                <img src="assets/img/home/cafe.jpg" alt="">
-                      <h4 class="ba-activity__text">COURTY CAFE</h4>
-                      <div class="ba-activities__overlay">
-                      <p>Lorem ipsum dolor sit amet, consectetur<br/> adipiscing elit. Aliquam sit amet posuere<br/> mauris. Aenean a lorem porttitor</p>
-                      <i class="ion-arrow-right-c"></i>
-                    </div>
-                </a>
-              </div>
-              <!-- END column medium-4 -->
+                <div class="ba-activity__overlay"></div>
+                  <div class="ba-activity__text">
+                      <h3>LIBRARY</h3>
+                        <div class="ba-activity__about">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet posuere mauris. Aenean a lorem porttitor
+                          </p>
+                       <a href="#"><i class="ion-arrow-right-c"></i></a>
+                       </div>
+                </div>
+            </div>
+            <!-- END ba-activity__img -->
+          </div>
+          <!-- END column medium-4 -->
+          <!-- BEGIN column medium-4  -->
+          <div class="column medium-4">
+            <!-- BEGIN ba-activity__img  -->
+            <div class="ba-activity__img">
+              <img src="assets/img/home/cafe.jpg" alt="">
+                <div class="ba-activity__overlay"></div>
+                  <div class="ba-activity__text">
+                      <h3>COURTYARD CAFE</h3>
+                        <div class="ba-activity__about">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet posuere mauris. Aenean a lorem porttitor
+                          </p>
+                       <a href="#"><i class="ion-arrow-right-c"></i></a>
+                       </div>
+                </div>
+            </div>
+            <!-- END ba-activity__img -->
+        </div>
+        <!-- END column medium-4 -->
+    
           </div>
           <!-- END row -->
         </div>
@@ -386,6 +401,8 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC0jnIDPLiN1GAoApbxIflOaSynYvKoxw"></script>
     <script src="assets/js/app.js"></script>
-    <script src="https://use.fontawesome.com/cdae8fbe94.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
   </body>
 </html>
